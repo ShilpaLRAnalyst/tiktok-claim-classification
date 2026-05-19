@@ -9,14 +9,14 @@ An end-to-end Machine Learning and Natural Language Processing (NLP) pipeline bu
 ## 🚀 Key Features & Pipeline Architecture
 * **Unstructured Text Processing (NLP):** Utilizes a pre-trained `CountVectorizer` to tokenize, clean, and convert raw spoken video transcripts into high-dimensional numerical text matrices.
 * **Feature Engineering Pipeline:** Dynamically scales and matches a 25-column alignment matrix combining live user-controlled engagement values (views, likes, shares, comments, downloads) with NLP features.
-* **Predictive Performance:** Powered by a tuned **Random Forest Classifier** selected as the champion production model for its robust handling of complex, non-linear text and engagement interactions.
+* **Predictive Performance:** Powered by a tuned **Random Forest Classifier**. While the XGBoost model performed  well overall, its errors leaned heavily toward **false negatives**. Because our core priority is content safety—meaning the application cannot afford to miss actual claim videos—the Random Forest model was chosen as the production champion for its superior ability to capture true claims and maximize overall recall.
 * **Cloud Architecture:** Packaged with standalone Python ecosystem dependencies and continuously deployed via Streamlit Community Cloud and GitHub version control workflows.
 
 ---
 
 ## 🛠️ Tech Stack & Libraries
 * **Language:** Python
-* **Machine Learning & NLP:** Scikit-Learn, Pandas, NumPy, Pickle
+* **Machine Learning & NLP:** Scikit-Learn,XGBoost,Pandas, NumPy, Pickle
 * **Deployment & UI Framework:** Streamlit Framework, GitHub Webhooks, Cloud Infrastructure Server
 
 ---
