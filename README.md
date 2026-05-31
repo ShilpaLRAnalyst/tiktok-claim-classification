@@ -2,7 +2,7 @@
 
 An end-to-end Machine Learning and Natural Language Processing (NLP) pipeline built to classify TikTok video content into either a factual **Claim** or a personal **Opinion**. This project combines text feature extraction with social engagement metrics to serve live predictions via an interactive web interface.
 
-🔗 **[Live Streamlit App Link](https://tiktok-claim-classification-hvqqvchfq9p48fqzetx4z8.streamlit.app/)**  | **[Jupyter Notebook Pipeline](https://nbviewer.org/github/ShilpaLRAnalyst/tiktok-claim-classification/blob/main/TikTok_Claim_Classification_Project.ipynb)**
+🔗 **[Live Streamlit App Link](https://tiktok-claim-classification-hvqqvchfq9p48fqzetx4z8.streamlit.app/)**  | **[Jupyter Notebook Pipeline](https://nbviewer.org/github/ShilpaLRAnalyst/tiktok-claim-classification/blob/main/TikTok_Claim_Classification_Project.ipynb)** | **[Google Colab Mirror](https://colab.research.google.com/drive/1uOgK5D-yhrL7ZCv04Yn_4WlnkidRJQhH?usp=sharing)**
 
 ---
 
