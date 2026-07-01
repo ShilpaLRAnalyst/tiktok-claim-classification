@@ -7,10 +7,10 @@ An end-to-end Machine Learning and Natural Language Processing (NLP) pipeline bu
 ---
 
 ## 🚀 Key Features & Pipeline Architecture
-* **Unstructured Text Processing (NLP):** Utilizes a pre-trained `CountVectorizer` to tokenize, clean, and convert raw spoken video transcripts into high-dimensional numerical text matrices.
-* **Feature Engineering Pipeline:** Dynamically scales and matches a 25-column alignment matrix combining live user-controlled engagement values (views, likes, shares, comments, downloads) with NLP features.
-* **Predictive Performance:** Powered by a tuned **Random Forest Classifier**. While the XGBoost model performed  well overall, its errors leaned heavily toward **false negatives**. Because our core priority is content safety—meaning the application cannot afford to miss actual claim videos—the Random Forest model was chosen as the production champion for its superior ability to capture true claims and maximize overall recall.
-* **Cloud Architecture:** Packaged with standalone Python ecosystem dependencies and continuously deployed via Streamlit Community Cloud and GitHub version control workflows.
+* **Unstructured Text Processing (NLP):** Utilizes a pre-trained `CountVectorizer` to tokenize, clean, and vectorize raw video transcripts for model training.
+* **Feature Engineering Pipeline:** Combines live, user-input engagement metrics (views, likes, shares, comments) with NLP features using a scaled 25-column alignment matrix.
+* **Predictive Performance:** Powered by a tuned **Random Forest Classifier**. While XGBoost achieved strong overall accuracy, it yielded a higher rate of **false negatives**. Since content safety requires minimizing missed claims, Random Forest was selected for production due to its superior recall and ability to reliably capture true claims.
+* **Cloud Architecture:** Packaged with standalone Python ecosystem dependencies and deployed via Streamlit Community Cloud and GitHub version control workflows.
 
 ---
 
@@ -24,9 +24,9 @@ An end-to-end Machine Learning and Natural Language Processing (NLP) pipeline bu
 ## 📁 Repository Contents
 * `TikTok_Claim_Classification_Project.ipynb`: The master engineering notebook containing exploratory data analysis, data cleaning, and feature encoding. It showcases the comparative evaluation of **Logistic Regression**, **XGBoost**, and **Random Forest** models, detailing hyperparameter tuning and champion model selection metrics.
 * `app.py`: The master execution script hosting the user interface logic, database structural layout, and cloud prediction pipeline.
-* `requirements.txt`: The isolated environment package log mapping exact third-party package dependencies required by the hosting web server.
-* `tiktok_random_forest_backup.pkl`: The serialized binary file storing frozen random forest mathematical weights.
-* `tiktok_vectorizer.pkl`: The serialized natural language vocabulary processing matrix mapping language features.
+* `requirements.txt`: Lists the required Python packages and dependencies needed to run and host the application.
+* `tiktok_random_forest_backup.pkl`: The serialized Random Forest model trained and used for production predictions.
+* `tiktok_vectorizer.pkl`: The serialized CountVectorizer instance used to transform raw text inputs.
 
 ---
 
